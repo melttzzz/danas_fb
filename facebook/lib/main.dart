@@ -1,6 +1,5 @@
-import 'package:facebook/page/maincustom.dart';
-import 'package:facebook/page/newsfeed.dart';
 import 'package:flutter/material.dart';
+import 'page/notification.dart'; // import your notification page
 
 void main() {
   runApp(const MyApp());
@@ -11,14 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Facebook',
-      theme: ThemeData(
-        
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue),
-      ),
-      home: MaincustomPage(),
+      home: NotificationPage(),
     );
   }
 }
